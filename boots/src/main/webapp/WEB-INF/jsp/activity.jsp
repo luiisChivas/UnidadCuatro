@@ -44,13 +44,13 @@
 							<tr>
 								<th>Id</th>
 								<th>Encounter</th>
-								<th>Sequence_no</th>
+								<th>SequenceNo</th>
 								<th>Code</th>
 								<th>Modifier</th>
-								<th>Payer_type</th>
-								<th>Post_user</th>
+								<th>PayerType</th>
+								<th>PostUser</th>
 								<th>Memo</th>
-								<th>Pay_amount</th>
+								<th>PayAmount</th>
 								<th>Update</th>
 								<th>Delete</th>
 							</tr>
@@ -60,13 +60,13 @@
 								<tr>
 									<td>${activity.id}</td>
 									<td>${activity.encounter}</td>
-									<td>${activity.sequence_no}</td>
+									<td>${activity.sequenceNo}</td>
 									<td>${activity.code}</td>
 									<td>${activity.modifier}</td>
-									<td>${activity.payer_type}</td>
-									<td>${activity.post_user}</td>
+									<td>${activity.payerType}</td>
+									<td>${activity.postUser}</td>
 									<td>${activity.memo}</td>
-									<td>${activity.pay_amount}</td>
+									<td>${activity.payAmount}</td>
 									<td><a href="update-activity?id=${activity.id}"><span class="glyphicon glyphicon-pencil"></span></a></td>
 									<td><a href="delete-activity?id=${activity.id}"> <span class="glyphicon glyphicon-trash"></span></a></td>
 								</tr>
@@ -91,10 +91,10 @@
 					</div>
 					
 					<div class="form-group">
-						<label class="control-label col-sm-3">Sequence_no:</label>
+						<label class="control-label col-sm-3">SequenceNo:</label>
 						<div class="col-sm-7">
-							<input type="number" class="form-control" name="sequence_no"
-								value="${activity.sequence_no}" />
+							<input type="number" class="form-control" name="sequenceNo"
+								value="${activity.sequenceNo}" />
 						</div>
 					</div>
 					
@@ -114,18 +114,18 @@
 					</div>
 					
 					<div class="form-group">
-						<label class="control-label col-sm-3">Payer_type:</label>
+						<label class="control-label col-sm-3">PayerType:</label>
 						<div class="col-sm-7">
-							<input type="number" class="form-control" name="payer_type"
-								value="${activity.payer_type}" />
+							<input type="number" class="form-control" name="payerType"
+								value="${activity.payerType}" />
 						</div>
 					</div>
 					
 					<div class="form-group">
-						<label class="control-label col-sm-3">Post_user:</label>
+						<label class="control-label col-sm-3">PostUser:</label>
 						<div class="col-sm-7">
-							<input type="number" class="form-control" name="post_user"
-								value="${activity.post_user}" />
+							<input type="number" class="form-control" name="postUser"
+								value="${activity.postUser}" />
 						</div>
 					</div>
 					<div class="form-group">
@@ -136,10 +136,10 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="control-label col-sm-3">Pay_amount:</label>
+						<label class="control-label col-sm-3">PayAmount:</label>
 						<div class="col-sm-7">
-							<input type="number" class="form-control" name="pay_amount"
-								value="${activity.pay_amount}" />
+							<input type="number" class="form-control" name="payAmount"
+								value="${activity.payAmount}" />
 						</div>
 					</div>
 					<div class="form-group">

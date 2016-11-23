@@ -17,29 +17,29 @@ public class Activity implements Serializable{
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	@Column (name="encounter")	private int encounter;
-	@Column (name="sequence_no") 	private int sequence_no;
+	@Column (name="sequence_no") 	private int sequenceNo;
 	@Column (length = 9) 	private String code;
 	@Column (length = 5) 	private String modifier;
-	@Column (name="payer_type") private int payer_type;
-	@Column (name="post_user") private int post_user;
+	@Column (name="payer_type") private int payerType;
+	@Column (name="post_user") private int postUser;
 	@Column (length = 255) 	private String memo;
-	@Column (name="pay_amount") private int pay_amount;
+	@Column (name="pay_amount") private int payAmount;
 	
 	
 	
 	
 	
-	public Activity(int encounter, int sequence_no, String code, String modifier, int payer_type, int post_user,
-			String memo, int pay_amount) {
+	public Activity(int encounter, int sequenceNo, String code, String modifier, int payerType, int postUser,
+			String memo, int payAmount) {
 		super();
 		this.encounter = encounter;
-		this.sequence_no = sequence_no;
+		this.sequenceNo = sequenceNo;
 		this.code = code;
 		this.modifier = modifier;
-		this.payer_type = payer_type;
-		this.post_user = post_user;
+		this.payerType = payerType;
+		this.postUser = postUser;
 		this.memo = memo;
-		this.pay_amount = pay_amount;
+		this.payAmount = payAmount;
 	}
 
 
@@ -74,17 +74,6 @@ public class Activity implements Serializable{
 
 
 
-	public int getSequence_no() {
-		return sequence_no;
-	}
-
-
-
-	public void setSequence_no(int sequence_no) {
-		this.sequence_no = sequence_no;
-	}
-
-
 
 	public String getCode() {
 		return code;
@@ -110,30 +99,6 @@ public class Activity implements Serializable{
 
 
 
-	public int getPayer_type() {
-		return payer_type;
-	}
-
-
-
-	public void setPayer_type(int payer_type) {
-		this.payer_type = payer_type;
-	}
-
-
-
-	public int getPost_user() {
-		return post_user;
-	}
-
-
-
-	public void setPost_user(int post_user) {
-		this.post_user = post_user;
-	}
-
-
-
 	public String getMemo() {
 		return memo;
 	}
@@ -146,29 +111,60 @@ public class Activity implements Serializable{
 
 
 
-	public int getPay_amount() {
-		return pay_amount;
+	public int getSequenceNo() {
+		return sequenceNo;
 	}
 
 
 
-	public void setPay_amount(int pay_amount) {
-		this.pay_amount = pay_amount;
+	public void setSequenceNo(int sequenceNo) {
+		this.sequenceNo = sequenceNo;
+	}
+
+
+
+	public int getPayerType() {
+		return payerType;
+	}
+
+
+
+	public void setPayerType(int payerType) {
+		this.payerType = payerType;
+	}
+
+
+
+	public int getPostUser() {
+		return postUser;
+	}
+
+
+
+	public void setPostUser(int postUser) {
+		this.postUser = postUser;
+	}
+
+
+
+	public int getPayAmount() {
+		return payAmount;
+	}
+
+
+
+	public void setPayAmount(int payAmount) {
+		this.payAmount = payAmount;
 	}
 
 
 
 	@Override
 	public String toString() {
-		return "Activity [id=" + id + ", encounter=" + encounter + ", sequence_no=" + sequence_no + ", code=" + code
-				+ ", modifier=" + modifier + ", payer_type=" + payer_type + ", post_user=" + post_user + ", memo="
-				+ memo + ", pay_amount=" + pay_amount + "]";
+		return "Activity [id=" + id + ", encounter=" + encounter + ", sequenceNo=" + sequenceNo + ", code=" + code
+				+ ", modifier=" + modifier + ", payerType=" + payerType + ", postUser=" + postUser + ", memo=" + memo
+				+ ", payAmount=" + payAmount + "]";
 	}
 
-
- 
-	
-	
-	
 	
 }
